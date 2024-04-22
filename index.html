@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/static.css">
+    <script src="scripts/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+<body>
+    <div class="header" style="font-family: 'Oswald';">
+        <h1>Inacap-Ludi</h1>
+        <img class="inacap" src="https://lms.inacap.cl/pluginfile.php/1/core_admin/logocompact/300x300/1713210799/logo_inacap.png" alt="">
+    </div>
+
+    <div class="navi">
+        <button><a href="index.html">Inicio</a></button>
+        <button><a href="#about">Acerca de</a></button>
+        <button><a href="#form">Inscribete</a></button>
+    </div>
+
+    <div class="container" style="font-family: 'Montserrat';">
+        <h1 align="center">PREPARATE</h1>
+        <p style="font-style: italic;" align="center">¿QUIERES DEMOSTRAR TUS HABILIDADES EN LOS JUEGOS DE MESA?</p>
+        <p style="font-style: italic;" align="center">O SIMPLEMENTE DESEAS TENER UN NUEVO DESAFIO</p>
+        <p style="font-weight: bold;" align="center">ESTA ES TU OPORTUNIDAD!!!</p>
+        <p align="center">APRESURATE</p>
+        <H1 style="text-align: center;">INSCRIPCIONES LIMITADAS</H1>
+        <img src="assets/chessbt.jpg" alt="" width="70%">
+    </div>
+
+    <p class="ctn-games" style="text-align: center; font-family: Segoe UI;">Disponemos de una gran variedad de juegos como ajedrez, damas, jenga, uno y muchos mas.</p>
+
+    <div class="footerimg" style="margin-bottom: 118px;">
+        <img class="img" src="assets/chessguy.jpg" alt="" width="20%">
+        <img class="img" src="assets/domino.jpg" alt="" width="20%">
+        <img class="img" src="assets/unocards.jpg" alt="" width="10%">
+
+    </div>
+
+    <div class="ins-header" style="margin-top: 30px;">
+        <h1 align="center">NO ESPERES MAS Y APUNTATE </h1>
+        <a class="aqui" href="#form">AQUÍ</a>
+    </div>
+
+    <div class="last-text" style="font-family: 'Prompt';">
+        <h2 style="margin-top: 0;">INACAP-LUDI</h2>
+        <p>¡¡¡No te quedes fuera!!!</p>
+        <img src="assets/group.jpg" alt="" width="50%">
+    </div>
+
+    <div id="about">
+        <h2>¿Qué es Inacap-Ludi?</h2>
+        <p>Inacap-Ludi es un taller de juegos de mesa que busca fomentar la interacción social y el desarrollo de habilidades cognitivas a través de la diversión y el entretenimiento.</p>
+    </div>
+
+    <div id="form" style="color: black; font-size: 40px;">
+        <form id="call2action" onsubmit="return sendForm(this);">
+            <div>
+                <span style="font-family: 'Times New Roman', Times, serif;"><label for="form_name">Tu nombre:</label></span>
+                <span><input type="text" id="form_name" name="form_name"/></span>
+            </div>
+            <div>
+                <span style="font-family: 'Times New Roman', Times, serif;"><label for="form_email">Tu e-mail:</label></span>
+                <span><input type="text" id="form_email" name="form_email"/></span>
+            </div>
+            <div>
+                <span style="font-family: 'Times New Roman', Times, serif;"><label for="form_game">Me gusta jugar:</label></span>
+                <span>
+                    <select id="form_game" name="form_game">
+                        <option value="">Selecciona el tipo de juego</option>
+                        <option value="de Cartas">Juegos de Cartas</option>
+                        <option value="Cooperativos">Juegos Cooperativos</option>
+                        <option value="Temáticos">Juegos Temáticos</option>
+                        <option value="de Estrategia">Juegos de Estrategia</option>
+                        <option value="de Aventura">Juegos de Aventura</option>
+                        <option value="de Acertijos">Juegos de Acertijos</option>
+                        <option value="Tradicionales">Juegos Tradicionales</option>
+                        <option value="de Rol">Juegos de Rol</option>
+                    </select>
+                </span>
+            </div>
+            <div>
+                <span><button type="submit" name="submit">Enviar</button></span>
+            </div>
+        </form>    
+    </div>
+
+    <div id="gift" style="display: none; background-color: white;color: black; margin-top: 100px;">
+        <p>
+            Gracias por enviarnos tus datos. <span id="contact_name" style="font-weight: bold;"></span>. 
+            Notamos que te apasionan los Juegos <span id="contact_game" style="font-weight: bold;"></span>. 
+            Nos contactaremos contigo a la brevedad usando tu dirección <span id="contact_email" style="font-weight: bold;"></span>.
+        </p>
+        <p>
+            Y no olvides que tenemos para tí un regalo por tu interés: 
+        </p>
+        <h2>
+            <a href="https://quejuegosdemesa.com/instrucciones/" target="_blank">
+                Descarga aquí instrucciones de juegos de mesa
+            </a>
+        </h2>
+    </div>
+    
+    <div id="contact">
+        <h2>Contacto</h2>
+        <address>
+            Horario de talleres 17:00-19:00 Hrs </br>
+            Direccion: Bravo de Saravia 2980, Renca </br>
+            Telefono: 2 600 600 3550 </br>
+            Correo: <a href="inacapludi.2024@inacap.cl">inacapludi.2024@inacap.cl</a> 
+        </address>
+        
+    </div>
+</body>
+</html>
